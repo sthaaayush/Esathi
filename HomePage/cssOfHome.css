@@ -1,0 +1,75 @@
+body {
+    background-image: url("../UserPage/background.png");
+}
+
+.logo {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.logo_img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+ 
+.content{
+    border: 1px black solid;
+    border-radius: 20%;
+    padding: 110px;
+}
+
+.user {
+
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.viewer {
+    width: 100%;
+    margin: 0;
+}
+
+.a {
+    border: none;
+    background-color: rgb(233, 244, 215);
+    height: 50px;
+    width: 150px;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 28px;
+    text-decoration: none;
+    color: black;
+}
+
+.a:hover {
+    background-color: rgb(216, 232, 191);
+    /* transform: scale(.95); */
+}
+
+.b {
+    border: none;
+    background-color: rgb(233, 244, 215);
+    height: 50px;
+    width: 150px;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.b:hover {
+    background-color: rgb(216, 232, 191);
+}

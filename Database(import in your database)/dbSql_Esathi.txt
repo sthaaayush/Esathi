@@ -1,0 +1,15 @@
+CREATE TABLE messsages(
+	id int PRIMARY KEY,
+    meassage varchar(300),
+    created_on datetime, 
+    updated_on datetime,
+    FOREIGN KEY response(id) REFERENCES messsages(id)
+);
+
+CREATE TABLE responses(
+	id int,
+    response varchar(300),
+    created_on datetime, 
+    updated_on datetime,
+    FOREIGN KEY response(id) REFERENCES messsages(id)
+);

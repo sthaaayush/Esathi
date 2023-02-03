@@ -40,12 +40,10 @@ if (isset($_POST['messages']) && !empty($_POST['messages'])) {
 
     <div class="bottom_body">
         <div class="sidebar">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
+            <a href="#">CHECK</a>
+            <a href="#">E-BOOKS</a>
+            <a href="#">VIDEOS</a>
+            <a href="#">ARTICLES</a>
         </div>
         <div class="chatbox">
         <div id="bot">

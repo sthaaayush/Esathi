@@ -24,7 +24,6 @@ body {
 }
  
 .content{
-    border: 1px black solid;
     border-radius: 20%;
     padding: 110px;
 }

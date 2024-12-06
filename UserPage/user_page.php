@@ -1,23 +1,21 @@
 <?php
 require_once("connectToDb.php");
 $data = "";
-if (isset($_POST['messages']) && !empty($_POST['messages'])) {
-    //Query for inserting message in database
-    $sql = "INSERT INTO messsages
-        SET
-        message = '" . $_POST['messages'] . "'";
 
-    //Runs Query in database
-    $query = mysqli_query($conn, $sql);
+if (isset($_POST['messagess']) && !empty($_POST['messagess'])) {
+    $sql = "INSERT INTO messagess (messages) VALUES (?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $_POST['messagess']);
+    $query = $stmt->execute();
 
-    //Check for database error and set display message
     if ($query) {
-        $data = $_POST['messages'];
+        $data = htmlspecialchars($_POST['messagess']);
     } else {
-        echo mysqli_error($conn);
+        echo "Error: " . $stmt->error;
     }
 }
 ?>
+
 
 <html>
 
@@ -50,7 +48,7 @@ if (isset($_POST['messages']) && !empty($_POST['messages'])) {
         <div id="container">
             <div id="body">
                 <div class="userSection">
-                    <div class="messages user-message">
+                    <div class="messagess user-messages">
                         <?php echo $data; ?>
                     </div>
                     <div class="seperator"></div>
@@ -59,7 +57,7 @@ if (isset($_POST['messages']) && !empty($_POST['messages'])) {
 
             <div id="inputArea">
                 <form action=<?php echo $_SERVER["PHP_SELF"]; ?> method="POST">
-                    <input type="text" name="messages" id="userInput" placeholder="Confess Here..." required>
+                    <input type="text" name="messagess" id="userInput" placeholder="Confess Here..." required>
                     <input type="submit" id="send" value="Send">
                 </form>
             </div>

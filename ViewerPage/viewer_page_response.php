@@ -1,8 +1,8 @@
 <?php
 require_once("connectToDb.php");
 $idOfMessage = $_POST["message_id"];
-//Displaying (SELECT) data from "messsages"
-$sql = "SELECT * FROM messsages WHERE id= " . $idOfMessage;
+//Displaying (SELECT) data from "messages"
+$sql = "SELECT * FROM messages WHERE id= " . $idOfMessage;
 $query = mysqli_query($conn, $sql);
 $message_data = mysqli_fetch_all($query, MYSQLI_ASSOC);
 

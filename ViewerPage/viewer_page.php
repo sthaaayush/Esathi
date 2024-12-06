@@ -1,11 +1,11 @@
 <?php
 require_once("connectToDb.php");
-//Displaying (SELECT) data from "messsages"
-$sql = "SELECT * FROM messsages";
+//Displaying (SELECT) data from "messages"
+$sql = "SELECT * FROM messages";
 $query = mysqli_query($conn, $sql);
 $message_data = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
-//Displaying (SELECT) data from "messsages"
+//Displaying (SELECT) data from "messages"
 $sql = "SELECT * FROM responses";
 $query = mysqli_query($conn, $sql);
 $response_data = mysqli_fetch_all($query, MYSQLI_ASSOC);

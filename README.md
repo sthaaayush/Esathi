@@ -2,7 +2,7 @@
 
 ## **Introduction**
 **Esathi** is a user-friendly web application designed to enable users to interact with features like chat functionality, e-books, videos, articles, and more. It includes an intuitive interface and provides a seamless experience for both users and administrators.
---
+
 ![esathi](https://github.com/sthaaayush/Esathi/assets/93993924/28d50714-cb9e-4d1c-bf59-ac67e4352cfc)
 ---
 
